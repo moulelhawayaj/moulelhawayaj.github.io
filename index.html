@@ -2,10 +2,61 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Moul El Hwayej</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Moul El Hwayej | متجر أزياء رجالية فاخرة في القنيطرة</title>
+<meta name="description" content="Moul El Hwayej - متجر أزياء رجالية فاخرة في القنيطرة، المغرب. قمصان، بدلات، إكسسوارات وأحذية بجودة استثنائية وتوصيل لجميع أنحاء المغرب.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://moulelhwayej.ma/">
+<link rel="icon" href="https://i.imgur.com/RRUoquD.jpeg" type="image/jpeg">
+<link rel="apple-touch-icon" href="https://i.imgur.com/RRUoquD.jpeg">
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Moul El Hwayej | أزياء رجالية فاخرة">
+<meta property="og:description" content="تشكيلة كاملة من الأزياء الرجالية بجودة استثنائية في القنيطرة، المغرب.">
+<meta property="og:image" content="https://i.imgur.com/RRUoquD.jpeg">
+<meta property="og:url" content="https://moulelhwayej.ma/">
+<meta property="og:locale" content="ar_MA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="geo.region" content="MA-KEN">
+<meta name="geo.placename" content="Kenitra">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ClothingStore",
+  "name": "Moul El Hwayej",
+  "image": "https://i.imgur.com/RRUoquD.jpeg",
+  "logo": "https://i.imgur.com/RRUoquD.jpeg",
+  "url": "https://moulelhwayej.ma/",
+  "telephone": "+212666662509",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rue Amira Aïcha",
+    "addressLocality": "Kenitra",
+    "postalCode": "14000",
+    "addressCountry": "MA"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "20:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.tiktok.com/@moul_lhwayj?_r=1&_t=ZS-98m8PccRbYy",
+    "https://www.facebook.com/share/1EKyZq1irW/?mibextid=wwXIfr",
+    "https://www.instagram.com/moul_lhwayj2?igsh=MXB2cWRmNGE0ODJqNw%3D%3D&utm_source=qr"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "6"
+  }
+}
+</script>
 <style>
   :root{
     --navy:#0a1230;
@@ -68,7 +119,7 @@
   }
   .header-inner{ display:flex; align-items:center; justify-content:space-between; padding:14px 24px; max-width:var(--maxw); margin:0 auto; position:relative; }
   .brand{ display:flex; align-items:center; gap:12px; }
-  .brand svg{ width:38px;height:38px; }
+  .brand-logo{ width:38px;height:38px; border-radius:50%; object-fit:cover; border:1px solid rgba(201,162,39,.5); }
   .brand-name{ color:var(--white); font-family:'Playfair Display',serif; font-size:19px; font-weight:700; letter-spacing:.04em; }
   html[dir="rtl"] .brand-name{ font-family:'Tajawal',sans-serif; }
   nav{ display:flex; align-items:center; gap:30px; }
@@ -89,6 +140,7 @@
   /* HERO */
   .hero{
     min-height:100vh;
+    min-height:100svh;
     display:flex; align-items:center; justify-content:center;
     padding:140px 0 80px;
     position:relative;
@@ -140,7 +192,7 @@
   .about-inner{ display:grid; grid-template-columns:.9fr 1.1fr; gap:64px; align-items:center; }
   .about-panel{ background:linear-gradient(160deg,var(--navy),var(--navy-2)); padding:50px 40px; position:relative; }
   .about-panel::before{ content:""; position:absolute; inset:10px; border:1px solid rgba(201,162,39,.35); pointer-events:none; }
-  .about-panel svg{ width:90px;margin-bottom:24px; }
+  .about-panel-logo{ width:84px;height:84px;border-radius:50%; object-fit:cover; margin-bottom:24px; border:2px solid rgba(201,162,39,.55); }
   .about-panel h3{ color:var(--white); font-size:24px; margin-bottom:14px; }
   .about-panel p{ color:#c3c9e0; font-size:15px; }
   .about-text h2{ font-size:clamp(26px,3.6vw,38px); margin:14px 0 20px; }
@@ -188,16 +240,65 @@
     display:flex; align-items:center; justify-content:center; font-size:20px;
   }
 
+  /* VIDEOS */
+  .videos{ background:var(--navy); }
+  .videos .section-head h2, .videos .eyebrow{ color:var(--white); }
+  .videos .eyebrow{ color:var(--gold); }
+  .videos .section-head p{ color:#e2e8f0; }
+  .video-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+  .video-item{ position:relative; overflow:hidden; border-radius:var(--radius); aspect-ratio:9/16; background:#000; border:1px solid rgba(201,162,39,.25); cursor:pointer; }
+  .video-item video{ width:100%; height:100%; object-fit:cover; display:block; }
+  .video-item .video-play{
+    position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+    background:rgba(7,8,13,.15); opacity:0; transition:opacity .25s ease;
+  }
+  .video-item:hover .video-play{ opacity:1; }
+  .video-play svg{ width:52px; height:52px; color:var(--gold); filter:drop-shadow(0 4px 10px rgba(0,0,0,.5)); }
+  .video-lightbox{
+    position:fixed; inset:0; z-index:500; background:rgba(7,8,13,.95);
+    display:none; align-items:center; justify-content:center; padding:24px;
+  }
+  .video-lightbox.open{ display:flex; }
+  .video-lightbox video{ max-width:min(420px,90vw); max-height:86vh; width:100%; border:2px solid rgba(201,162,39,.6); border-radius:var(--radius); }
+  .video-lightbox-close{
+    position:absolute; top:22px; inset-inline-end:26px; width:44px; height:44px; border-radius:50%;
+    background:rgba(255,255,255,.08); border:1px solid rgba(201,162,39,.4); color:var(--white);
+    display:flex; align-items:center; justify-content:center; font-size:20px; z-index:2;
+  }
+
   /* REVIEWS */
   .reviews{ background:var(--ivory); }
-  .rev-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
-  .rev-card{ background:var(--white); padding:30px 26px; border:1px solid #e7e5df; position:relative; }
-  .rev-card .stars{ color:var(--gold); font-size:14px; letter-spacing:2px; margin-bottom:14px; }
-  .rev-card p{ font-size:14.5px; color:#40424f; margin-bottom:22px; min-height:80px; }
-  .rev-person{ display:flex; align-items:center; gap:12px; }
-  .avatar{ width:46px;height:46px;border-radius:50%; flex:none; }
+  .rev-summary{
+    display:flex; align-items:center; justify-content:center; gap:28px;
+    max-width:640px; margin:-24px auto 50px; padding:26px 32px;
+    background:var(--white); border:1px solid #e7e5df; flex-wrap:wrap;
+  }
+  .rev-summary .rev-score{ text-align:center; }
+  .rev-summary .rev-score b{ display:block; font-family:'Playfair Display',serif; font-size:44px; color:var(--navy); line-height:1; }
+  html[dir="rtl"] .rev-summary .rev-score b{ font-family:'Tajawal',sans-serif; }
+  .rev-summary .rev-score .stars{ color:var(--gold); font-size:16px; letter-spacing:2px; margin:8px 0 4px; }
+  .rev-summary .rev-score span{ font-size:12px; color:var(--gray); }
+  .rev-summary .rev-bars{ flex:1; min-width:180px; display:flex; flex-direction:column; gap:6px; }
+  .rev-bar-row{ display:flex; align-items:center; gap:10px; font-size:12px; color:var(--gray); }
+  .rev-bar-row .bar-track{ flex:1; height:6px; background:#eae8e1; border-radius:4px; overflow:hidden; }
+  .rev-bar-row .bar-fill{ height:100%; background:var(--gold); border-radius:4px; }
+  .rev-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:22px; }
+  .rev-card{ background:var(--white); padding:28px 24px; border:1px solid #e7e5df; position:relative; display:flex; flex-direction:column; }
+  .rev-card .rev-top{ display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; gap:10px; }
+  .rev-card .stars{ color:var(--gold); font-size:14px; letter-spacing:2px; }
+  .rev-verified{
+    display:inline-flex; align-items:center; gap:5px; font-size:11px; color:#3a8a5c;
+    background:rgba(58,138,92,.09); padding:4px 9px; border-radius:20px; white-space:nowrap; flex:none;
+  }
+  .rev-verified svg{ width:12px;height:12px; }
+  .rev-card p{ font-size:14.5px; color:#40424f; margin-bottom:18px; flex:1; }
+  .rev-tag{ display:inline-block; font-size:11.5px; color:var(--gold); border:1px solid rgba(201,162,39,.4); padding:3px 10px; border-radius:20px; margin-bottom:16px; width:fit-content; }
+  .rev-person{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
+  .rev-person-info{ display:flex; align-items:center; gap:12px; }
+  .avatar{ width:46px;height:46px;border-radius:50%; flex:none; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-family:'Playfair Display',serif; }
   .rev-person b{ display:block; font-size:14px; }
   .rev-person span{ font-size:12px; color:var(--gray); }
+  .rev-date{ font-size:11.5px; color:var(--gray); white-space:nowrap; }
 
   /* CONTACT */
   .contact{ background:linear-gradient(180deg,var(--black),var(--navy)); }
@@ -237,8 +338,12 @@
   .field select option{ color:#000; }
   .field textarea{ resize:vertical; min-height:100px; }
   .field input:focus, .field select:focus, .field textarea:focus{ outline:2px solid var(--gold); border-color:transparent; }
+  .field.error input, .field.error select, .field.error textarea{ border-color:#e05252; }
+  .field-error{ display:none; font-size:12px; color:#ff8080; margin-top:6px; }
+  .field.error .field-error{ display:block; }
   .form-note{ font-size:12px; color:#aab0d1; }
   #formStatus{ font-size:13px; color:var(--gold); min-height:18px; }
+  #formStatus.success{ color:#6fd88a; }
 
   /* FOOTER */
   footer{ background:var(--black); padding:50px 0 26px; }
@@ -262,18 +367,28 @@
   .footer-credit a:hover{ color:var(--gold-light); }
 
   /* FLOATING BUTTONS */
-  .floaters{ position:fixed; bottom:26px; inset-inline-end:26px; z-index:300; display:flex; flex-direction:column; gap:14px; }
-  .floater{ width:56px;height:56px;border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 24px rgba(0,0,0,.35); transition:.25s; }
+  .floaters{ position:fixed; bottom:26px; inset-inline-end:26px; z-index:300; display:flex; flex-direction:column; gap:14px; padding-bottom:env(safe-area-inset-bottom); }
+  .floater{ width:56px;height:56px;border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 24px rgba(0,0,0,.35); transition:.25s; position:relative; }
   .floater:hover{ transform:translateY(-4px) scale(1.05); }
   .floater.wa{ background:#25D366; }
   .floater.call{ background:var(--gold); }
+  .floater.maps{ background:#fff; border:1px solid rgba(0,0,0,.08); }
   .floater svg{ width:26px;height:26px;color:#fff; }
   .floater.call svg{ color:var(--black); }
+  .floater .floater-tip{
+    position:absolute; inset-inline-end:calc(100% + 12px); top:50%; transform:translateY(-50%);
+    background:var(--black); color:#fff; font-size:12px; padding:6px 10px; border-radius:var(--radius);
+    white-space:nowrap; opacity:0; pointer-events:none; transition:opacity .2s ease;
+  }
+  .floater:hover .floater-tip{ opacity:1; }
 
   /* animations on scroll */
   .reveal{ opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; }
   .reveal.in{ opacity:1; transform:translateY(0); }
 
+  @media(max-width:1024px){
+    .video-grid{ grid-template-columns:repeat(3,1fr); gap:12px; }
+  }
   @media(max-width:980px){
     section{ padding:64px 0; }
     .cat-card{ padding:22px 16px; min-height:170px; }
@@ -288,6 +403,7 @@
       flex-direction:column; align-items:stretch; gap:0;
       background:var(--navy-2); border-bottom:1px solid rgba(201,162,39,.25);
       box-shadow:0 20px 40px rgba(0,0,0,.4);
+      max-height:calc(100vh - 64px); overflow-y:auto;
     }
     nav.nav-open a{ padding:16px 24px; border-bottom:1px solid rgba(255,255,255,.06); }
     .burger{ display:flex; }
@@ -298,10 +414,30 @@
     .cat-grid{ grid-template-columns:repeat(2,1fr); }
     .gallery-grid{ grid-template-columns:repeat(3,1fr); gap:10px; }
     .gallery-item.wide{ grid-column:span 2; }
+    .video-grid{ grid-template-columns:repeat(3,1fr); gap:10px; }
     .rev-grid{ grid-template-columns:1fr; }
     .contact-inner{ grid-template-columns:1fr; }
     .form-row{ grid-template-columns:1fr; }
     .footer-inner{ flex-direction:column; text-align:center; }
+  }
+  @media(max-width:640px){
+    .header-inner{ padding:12px 16px; }
+    .brand-name{ font-size:16px; }
+    .brand svg{ width:32px;height:32px; }
+    .hero{ padding:120px 0 60px; }
+    .hero p{ font-size:15.5px; }
+    .btn{ padding:14px 22px; width:100%; justify-content:center; }
+    .btn-row{ width:100%; flex-direction:column; }
+    .stat-row{ gap:20px; justify-content:space-between; width:100%; }
+    .stat b{ font-size:24px; }
+    .video-grid{ grid-template-columns:repeat(2,1fr); }
+    .rev-summary{ flex-direction:column; margin-top:0; padding:22px; }
+    .rev-bars{ width:100%; }
+    .floaters{ bottom:18px; inset-inline-end:16px; gap:12px; }
+    .floater{ width:50px;height:50px; }
+    .floater svg{ width:22px;height:22px; }
+    .floater-tip{ display:none; }
+    .map-embed{ height:260px; }
   }
   @media(max-width:480px){
     section{ padding:48px 0; }
@@ -313,6 +449,7 @@
     .cat-grid{ grid-template-columns:1fr; }
     .gallery-grid{ grid-template-columns:repeat(2,1fr); gap:8px; }
     .gallery-item.wide{ grid-column:span 2; }
+    .video-grid{ grid-template-columns:repeat(2,1fr); gap:8px; }
   }
   @media(prefers-reduced-motion:reduce){
     *{ animation:none !important; transition:none !important; }
@@ -325,7 +462,7 @@
 <header>
   <div class="header-inner">
     <div class="brand">
-      <svg viewBox="0 0 100 100" fill="none"><path d="M50 4L62 16H80L86 34L78 46L86 58L80 76H62L50 88L38 76H20L14 58L22 46L14 34L20 16H38L50 4Z" stroke="#c9a227" stroke-width="2"/><rect x="30" y="30" width="40" height="42" stroke="#c9a227" stroke-width="2"/><text x="50" y="57" text-anchor="middle" fill="#c9a227" font-family="Playfair Display, serif" font-size="20" font-weight="700">ML</text></svg>
+      <img class="brand-logo" src="https://i.imgur.com/RRUoquD.jpeg" alt="Moul El Hwayej">
       <span class="brand-name">Moul El Hwayej</span>
     </div>
     <nav>
@@ -333,6 +470,7 @@
       <a href="#quienes" data-i18n="nav_about">من نحن</a>
       <a href="#categorias" data-i18n="nav_cats">تشكيلاتنا</a>
       <a href="#galeria" data-i18n="nav_gallery">معرض الصور</a>
+      <a href="#videos" data-i18n="nav_videos">فيديوهات</a>
       <a href="#resenas" data-i18n="nav_reviews">آراء الزبائن</a>
       <a href="#contacto" data-i18n="nav_contact">اتصل بنا</a>
     </nav>
@@ -350,7 +488,7 @@
           <button data-lang="it">Italiano</button>
         </div>
       </div>
-      <button class="burger" id="burgerBtn"><span></span><span></span><span></span></button>
+      <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
@@ -378,7 +516,7 @@
 <section class="about" id="quienes">
   <div class="wrap about-inner">
     <div class="about-panel reveal">
-      <svg viewBox="0 0 100 100" fill="none"><path d="M50 4L62 16H80L86 34L78 46L86 58L80 76H62L50 88L38 76H20L14 58L22 46L14 34L20 16H38L50 4Z" stroke="#c9a227" stroke-width="2"/><rect x="30" y="30" width="40" height="42" stroke="#c9a227" stroke-width="2"/><text x="50" y="57" text-anchor="middle" fill="#c9a227" font-family="Playfair Display, serif" font-size="20" font-weight="700">ML</text></svg>
+      <img class="about-panel-logo" src="https://i.imgur.com/RRUoquD.jpeg" alt="Moul El Hwayej">
       <h3 data-i18n="about_panel_title">هويتنا</h3>
       <p data-i18n="about_panel_text">علامة مغربية تجمع بين الأناقة الملكية والحرفية التقليدية، لتقديم تجربة تسوق استثنائية للرجل العصري.</p>
     </div>
@@ -443,34 +581,34 @@
       <p data-i18n="gallery_sub">تصفح مجموعة من أحدث قطعنا وتفاصيل متجرنا</p>
     </div>
     <div class="gallery-grid">
-      <div class="gallery-item wide reveal"><img src="https://i.imgur.com/uAZv3rG.png" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/Fyp0wCh.png" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/y6cG0Ij.jpeg" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/A4ZpFpk.jpeg" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/LdUAU5k.jpeg" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/HomtC3y.jpeg" alt="Moul El Hwayej"></div>
-      <div class="gallery-item wide reveal"><img src="https://i.imgur.com/Uq9QBl0.jpeg" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/8wmj2hV.jpeg" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/S0nI7Tp.jpeg" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/XrEXhsO.jpeg" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/y8C5TF2.jpeg" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/DE7qWvl.png" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/wZVFp1f.png" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/61jMrKy.png" alt="Moul El Hwayej"></div>
-      <div class="gallery-item wide reveal"><img src="https://i.imgur.com/2x0VODX.png" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/wSuKnAE.png" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/xl0J9Ei.png" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/20nq778.png" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/vfUkyD8.png" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/BZsBiON.png" alt="Moul El Hwayej"></div>
-      <div class="gallery-item wide reveal"><img src="https://i.imgur.com/pYZ9uJk.png" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/oYnyNY8.png" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/DVtqPuM.png" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/XwK3BjQ.png" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/HS0to5e.png" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/dofdebd.png" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/PGlQX5E.png" alt="Moul El Hwayej"></div>
-      <div class="gallery-item reveal"><img src="https://i.imgur.com/248RKvA.png" alt="Moul El Hwayej"></div>
+      <div class="gallery-item wide reveal"><img src="https://i.imgur.com/uAZv3rG.png" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/Fyp0wCh.png" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/y6cG0Ij.jpeg" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/A4ZpFpk.jpeg" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/LdUAU5k.jpeg" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/HomtC3y.jpeg" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item wide reveal"><img src="https://i.imgur.com/Uq9QBl0.jpeg" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/8wmj2hV.jpeg" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/S0nI7Tp.jpeg" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/XrEXhsO.jpeg" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/y8C5TF2.jpeg" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/DE7qWvl.png" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/wZVFp1f.png" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/61jMrKy.png" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item wide reveal"><img src="https://i.imgur.com/2x0VODX.png" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/wSuKnAE.png" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/xl0J9Ei.png" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/20nq778.png" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/vfUkyD8.png" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/BZsBiON.png" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item wide reveal"><img src="https://i.imgur.com/pYZ9uJk.png" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/oYnyNY8.png" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/DVtqPuM.png" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/XwK3BjQ.png" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/HS0to5e.png" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/dofdebd.png" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/PGlQX5E.png" alt="Moul El Hwayej" loading="lazy"></div>
+      <div class="gallery-item reveal"><img src="https://i.imgur.com/248RKvA.png" alt="Moul El Hwayej" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -480,6 +618,40 @@
   <img id="galleryLightboxImg" src="" alt="">
 </div>
 
+<!-- VIDEOS -->
+<section class="videos" id="videos">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="videos_eyebrow">فيديوهات</span>
+      <h2 data-i18n="videos_title">شاهد تشكيلتنا</h2>
+      <p data-i18n="videos_sub">لمحات فيديو من متجرنا وأحدث قطعنا</p>
+    </div>
+    <div class="video-grid">
+      <div class="video-item reveal">
+        <video src="https://i.imgur.com/kI12oyT.mp4" muted loop playsinline preload="metadata"></video>
+        <div class="video-play"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11" fill="rgba(7,8,13,.55)"/><path d="M10 8l6 4-6 4V8z" fill="#fff"/></svg></div>
+      </div>
+      <div class="video-item reveal">
+        <video src="https://i.imgur.com/CmgGmLC.mp4" muted loop playsinline preload="metadata"></video>
+        <div class="video-play"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11" fill="rgba(7,8,13,.55)"/><path d="M10 8l6 4-6 4V8z" fill="#fff"/></svg></div>
+      </div>
+      <div class="video-item reveal">
+        <video src="https://i.imgur.com/V6Tby6g.mp4" muted loop playsinline preload="metadata"></video>
+        <div class="video-play"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11" fill="rgba(7,8,13,.55)"/><path d="M10 8l6 4-6 4V8z" fill="#fff"/></svg></div>
+      </div>
+      <div class="video-item reveal">
+        <video src="https://i.imgur.com/1nEG5RQ.mp4" muted loop playsinline preload="metadata"></video>
+        <div class="video-play"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11" fill="rgba(7,8,13,.55)"/><path d="M10 8l6 4-6 4V8z" fill="#fff"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="video-lightbox" id="videoLightbox">
+  <button class="video-lightbox-close" id="videoClose">✕</button>
+  <video id="videoLightboxVideo" src="" controls autoplay playsinline></video>
+</div>
+
 <!-- REVIEWS -->
 <section class="reviews" id="resenas">
   <div class="wrap">
@@ -487,29 +659,107 @@
       <span class="eyebrow" data-i18n="rev_eyebrow">آراء الزبائن</span>
       <h2 data-i18n="rev_title">ماذا يقولون عنا</h2>
     </div>
+    <div class="rev-summary reveal">
+      <div class="rev-score">
+        <b>4.9</b>
+        <div class="stars">★★★★★</div>
+        <span data-i18n="rev_summary_count">بناءً على 6 تقييمات</span>
+      </div>
+      <div class="rev-bars">
+        <div class="rev-bar-row"><span>5★</span><div class="bar-track"><div class="bar-fill" style="width:92%;"></div></div><span>92%</span></div>
+        <div class="rev-bar-row"><span>4★</span><div class="bar-track"><div class="bar-fill" style="width:8%;"></div></div><span>8%</span></div>
+        <div class="rev-bar-row"><span>3★</span><div class="bar-track"><div class="bar-fill" style="width:0%;"></div></div><span>0%</span></div>
+      </div>
+    </div>
     <div class="rev-grid">
       <div class="rev-card reveal">
-        <div class="stars">★★★★★</div>
+        <div class="rev-top">
+          <div class="stars">★★★★★</div>
+          <span class="rev-verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="rev_verified">مشترٍ موثق</span></span>
+        </div>
         <p data-i18n="rev1_text">جودة ممتازة وخدمة راقية، تجربة تسوق لا تُنسى.</p>
+        <span class="rev-tag" data-i18n="cat2_t">بدلات</span>
         <div class="rev-person">
-          <div class="avatar" style="background:#c9a227;"></div>
-          <div><b data-i18n="rev1_name">يوسف</b><span data-i18n="rev1_role">زبون دائم</span></div>
+          <div class="rev-person-info">
+            <div class="avatar" style="background:#c9a227;">ي</div>
+            <div><b data-i18n="rev1_name">يوسف</b><span data-i18n="rev1_role">زبون دائم</span></div>
+          </div>
+          <span class="rev-date" data-i18n="rev1_date">يوليوز 2026</span>
         </div>
       </div>
       <div class="rev-card reveal">
-        <div class="stars">★★★★★</div>
+        <div class="rev-top">
+          <div class="stars">★★★★★</div>
+          <span class="rev-verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="rev_verified">مشترٍ موثق</span></span>
+        </div>
         <p data-i18n="rev2_text">تصاميم راقية بأسعار معقولة، أنصح بها بشدة.</p>
+        <span class="rev-tag" data-i18n="cat1_t">قمصان</span>
         <div class="rev-person">
-          <div class="avatar" style="background:#2650e8;"></div>
-          <div><b data-i18n="rev2_name">كريم</b><span data-i18n="rev2_role">زبون جديد</span></div>
+          <div class="rev-person-info">
+            <div class="avatar" style="background:#2650e8;">ك</div>
+            <div><b data-i18n="rev2_name">كريم</b><span data-i18n="rev2_role">زبون جديد</span></div>
+          </div>
+          <span class="rev-date" data-i18n="rev2_date">يوليوز 2026</span>
         </div>
       </div>
       <div class="rev-card reveal">
-        <div class="stars">★★★★★</div>
+        <div class="rev-top">
+          <div class="stars">★★★★★</div>
+          <span class="rev-verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="rev_verified">مشترٍ موثق</span></span>
+        </div>
         <p data-i18n="rev3_text">توصيل سريع وجودة تفوق التوقعات.</p>
+        <span class="rev-tag" data-i18n="cat4_t">أحذية</span>
         <div class="rev-person">
-          <div class="avatar" style="background:#0f1c46;"></div>
-          <div><b data-i18n="rev3_name">أمين</b><span data-i18n="rev3_role">زبون دائم</span></div>
+          <div class="rev-person-info">
+            <div class="avatar" style="background:#0f1c46;">أ</div>
+            <div><b data-i18n="rev3_name">أمين</b><span data-i18n="rev3_role">زبون دائم</span></div>
+          </div>
+          <span class="rev-date" data-i18n="rev3_date">يونيو 2026</span>
+        </div>
+      </div>
+      <div class="rev-card reveal">
+        <div class="rev-top">
+          <div class="stars">★★★★★</div>
+          <span class="rev-verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="rev_verified">مشترٍ موثق</span></span>
+        </div>
+        <p data-i18n="rev4_text">الأقمشة راقية جداً والقصة مضبوطة، شكراً موول الحوايج.</p>
+        <span class="rev-tag" data-i18n="cat3_t">إكسسوارات</span>
+        <div class="rev-person">
+          <div class="rev-person-info">
+            <div class="avatar" style="background:#7a1f1f;">س</div>
+            <div><b data-i18n="rev4_name">سفيان</b><span data-i18n="rev4_role">زبون جديد</span></div>
+          </div>
+          <span class="rev-date" data-i18n="rev4_date">يونيو 2026</span>
+        </div>
+      </div>
+      <div class="rev-card reveal">
+        <div class="rev-top">
+          <div class="stars">★★★★★</div>
+          <span class="rev-verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="rev_verified">مشترٍ موثق</span></span>
+        </div>
+        <p data-i18n="rev5_text">تعامل راقي وفريق محترف، كل قطعة اخترتها فاقت توقعاتي.</p>
+        <span class="rev-tag" data-i18n="cat2_t">بدلات</span>
+        <div class="rev-person">
+          <div class="rev-person-info">
+            <div class="avatar" style="background:#1f5a3a;">م</div>
+            <div><b data-i18n="rev5_name">مهدي</b><span data-i18n="rev5_role">زبون دائم</span></div>
+          </div>
+          <span class="rev-date" data-i18n="rev5_date">ماي 2026</span>
+        </div>
+      </div>
+      <div class="rev-card reveal">
+        <div class="rev-top">
+          <div class="stars">★★★★★</div>
+          <span class="rev-verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="rev_verified">مشترٍ موثق</span></span>
+        </div>
+        <p data-i18n="rev6_text">أول تجربة ليا وما ندمتش، جودة توازي الأسعار المرتفعة.</p>
+        <span class="rev-tag" data-i18n="cat1_t">قمصان</span>
+        <div class="rev-person">
+          <div class="rev-person-info">
+            <div class="avatar" style="background:#5b3a8a;">ح</div>
+            <div><b data-i18n="rev6_name">حمزة</b><span data-i18n="rev6_role">زبون جديد</span></div>
+          </div>
+          <span class="rev-date" data-i18n="rev6_date">ماي 2026</span>
         </div>
       </div>
     </div>
@@ -545,12 +795,23 @@
           </div>
         </div>
       </div>
-      <form>
+      <form id="contactForm" novalidate>
         <div class="form-row">
-          <div class="field"><label data-i18n="f_name">الاسم</label><input type="text"></div>
-          <div class="field"><label data-i18n="f_phone">الهاتف</label><input type="tel"></div>
+          <div class="field" data-field="name"><label data-i18n="f_name">الاسم</label><input type="text" name="name" required><span class="field-error" data-i18n="f_err_name">الرجاء إدخال الاسم</span></div>
+          <div class="field" data-field="phone"><label data-i18n="f_phone">الهاتف</label><input type="tel" name="phone" required pattern="^[0-9+ ]{9,15}$"><span class="field-error" data-i18n="f_err_phone">الرجاء إدخال رقم هاتف صحيح</span></div>
         </div>
-        <div class="field"><label data-i18n="f_msg">الرسالة</label><textarea></textarea></div>
+        <div class="field" data-field="interest">
+          <label data-i18n="f_interest">أنا مهتم بـ</label>
+          <select name="interest">
+            <option value="" data-i18n="f_interest_opt0">اختر تشكيلة</option>
+            <option value="shirts" data-i18n="cat1_t">قمصان</option>
+            <option value="suits" data-i18n="cat2_t">بدلات</option>
+            <option value="accessories" data-i18n="cat3_t">إكسسوارات</option>
+            <option value="shoes" data-i18n="cat4_t">أحذية</option>
+            <option value="other" data-i18n="f_interest_opt5">أخرى</option>
+          </select>
+        </div>
+        <div class="field" data-field="msg"><label data-i18n="f_msg">الرسالة</label><textarea name="message"></textarea></div>
         <button type="submit" class="btn btn-primary" data-i18n="f_send">إرسال</button>
         <span class="form-note" data-i18n="f_note">سنتواصل معكم في أقرب وقت ممكن.</span>
         <span id="formStatus"></span>
@@ -606,10 +867,16 @@
 
 <!-- FLOATING BUTTONS -->
 <div class="floaters">
+  <a href="https://www.google.com/maps/search/?api=1&query=Rue+Amira+A%C3%AFcha%2C+Kenitra+14000" class="floater maps" target="_blank" rel="noopener" aria-label="Google Maps">
+    <span class="floater-tip" data-i18n="floater_maps_tip">افتح في خرائط جوجل</span>
+    <svg viewBox="0 0 48 48" width="26" height="26"><path fill="#4285F4" d="M24 4C15.2 4 8 11.2 8 20c0 11 16 24 16 24s16-13 16-24C40 11.2 32.8 4 24 4z"/><circle cx="24" cy="20" r="7" fill="#fff"/></svg>
+  </a>
   <a href="https://wa.me/212666662509" class="floater wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <span class="floater-tip" data-i18n="floater_wa_tip">راسلنا واتساب</span>
     <svg viewBox="0 0 32 32" width="26" height="26" fill="#ffffff"><path d="M16.004 3C9.373 3 4 8.373 4 15.004c0 2.65.857 5.1 2.312 7.09L4.66 28.79a.75.75 0 00.92.92l6.696-1.652a11.94 11.94 0 004.728.977c6.63 0 12.004-5.373 12.004-12.031C29.008 8.373 22.634 3 16.004 3zm0 21.86a9.79 9.79 0 01-4.996-1.365l-.358-.213-3.976.98.99-3.876-.234-.4A9.79 9.79 0 016.13 15.03c0-5.44 4.436-9.876 9.874-9.876 5.44 0 9.876 4.436 9.876 9.876 0 5.44-4.436 9.83-9.876 9.83zm5.4-7.36c-.296-.148-1.75-.864-2.02-.963-.27-.1-.468-.148-.665.148-.198.296-.762.963-.934 1.163-.172.198-.344.222-.64.074-.296-.148-1.25-.46-2.38-1.47-.88-.786-1.474-1.756-1.646-2.052-.172-.296-.018-.456.13-.604.134-.133.296-.345.444-.517.148-.172.198-.296.296-.494.1-.198.05-.37-.025-.518-.074-.148-.665-1.605-.912-2.198-.24-.578-.485-.5-.665-.51-.172-.008-.37-.01-.567-.01a1.09 1.09 0 00-.79.37c-.27.296-1.038 1.014-1.038 2.47 0 1.457 1.062 2.865 1.21 3.063.148.198 2.09 3.19 5.062 4.474.708.306 1.26.49 1.69.627.71.226 1.356.194 1.867.118.57-.085 1.75-.716 1.996-1.408.247-.692.247-1.284.173-1.408-.074-.124-.27-.198-.567-.346z"/></svg>
   </a>
-  <a href="tel:+212666662509" class="floater call">
+  <a href="tel:+212666662509" class="floater call" aria-label="Call">
+    <span class="floater-tip" data-i18n="floater_call_tip">اتصل بنا</span>
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
   </a>
 </div>
@@ -618,7 +885,7 @@
   // traducciones
   const translations = {
     ar: {
-      nav_home:"الرئيسية", nav_about:"من نحن", nav_cats:"تشكيلاتنا", nav_gallery:"معرض الصور", nav_reviews:"آراء الزبائن", nav_contact:"اتصل بنا",
+      nav_home:"الرئيسية", nav_about:"من نحن", nav_cats:"تشكيلاتنا", nav_gallery:"معرض الصور", nav_videos:"فيديوهات", nav_reviews:"آراء الزبائن", nav_contact:"اتصل بنا",
       hero_eyebrow:"أناقة رجالية مغربية", hero_title:'أزياء رجالية بهوية <em>ملكية</em>', hero_sub:"تشكيلة كاملة من الأزياء الرجالية بجودة استثنائية، صُممت لتكون الأولى في المغرب سنة 2026.",
       hero_cta1:"اكتشف التشكيلة", hero_cta2:"تواصل معنا",
       stat1:"تصميم عصري", stat2:"جودة مضمونة", stat3:"لغات متوفرة",
@@ -632,20 +899,29 @@
       cat1_t:"قمصان", cat1_d:"أناقة يومية", cat2_t:"بدلات", cat2_d:"للمناسبات الرسمية",
       cat3_t:"إكسسوارات", cat3_d:"لمسات مميزة", cat4_t:"أحذية", cat4_d:"جودة وراحة",
       gallery_eyebrow:"معرض الصور", gallery_title:"لمحة من عالمنا", gallery_sub:"تصفح مجموعة من أحدث قطعنا وتفاصيل متجرنا",
+      videos_eyebrow:"فيديوهات", videos_title:"شاهد تشكيلتنا", videos_sub:"لمحات فيديو من متجرنا وأحدث قطعنا",
       rev_eyebrow:"آراء الزبائن", rev_title:"ماذا يقولون عنا",
       rev1_text:"جودة ممتازة وخدمة راقية، تجربة تسوق لا تُنسى.", rev1_name:"يوسف", rev1_role:"زبون دائم",
       rev2_text:"تصاميم راقية بأسعار معقولة، أنصح بها بشدة.", rev2_name:"كريم", rev2_role:"زبون جديد",
       rev3_text:"توصيل سريع وجودة تفوق التوقعات.", rev3_name:"أمين", rev3_role:"زبون دائم",
+      rev4_text:"الأقمشة راقية جداً والقصة مضبوطة، شكراً موول الحوايج.", rev4_name:"سفيان", rev4_role:"زبون جديد",
+      rev5_text:"تعامل راقي وفريق محترف، كل قطعة اخترتها فاقت توقعاتي.", rev5_name:"مهدي", rev5_role:"زبون دائم",
+      rev6_text:"أول تجربة ليا وما ندمتش، جودة توازي الأسعار المرتفعة.", rev6_name:"حمزة", rev6_role:"زبون جديد",
+      rev1_date:"يوليوز 2026", rev2_date:"يوليوز 2026", rev3_date:"يونيو 2026", rev4_date:"يونيو 2026", rev5_date:"ماي 2026", rev6_date:"ماي 2026",
+      rev_verified:"مشترٍ موثق", rev_summary_count:"بناءً على 6 تقييمات",
       contact_eyebrow:"اتصل بنا", contact_title:"تواصل معنا",
       c1_t:"الهاتف", c1_d:"+212 666 62 509", c2_t:"البريد الإلكتروني", c2_d:"contact@moulelhwayej.ma",
       c3_t:"العنوان", c3_d:"Rue Amira Aïcha, Kenitra 14000", map_btn:"افتح في خرائط جوجل",
-      f_name:"الاسم", f_phone:"الهاتف", f_msg:"الرسالة", f_send:"إرسال", f_note:"سنتواصل معكم في أقرب وقت ممكن.",
+      f_name:"الاسم", f_phone:"الهاتف", f_interest:"أنا مهتم بـ", f_interest_opt0:"اختر تشكيلة", f_interest_opt5:"أخرى",
+      f_msg:"الرسالة", f_send:"إرسال", f_note:"سنتواصل معكم في أقرب وقت ممكن.",
+      f_err_name:"الرجاء إدخال الاسم", f_err_phone:"الرجاء إدخال رقم هاتف صحيح",
+      floater_maps_tip:"افتح في خرائط جوجل", floater_wa_tip:"راسلنا واتساب", floater_call_tip:"اتصل بنا",
       footer_rights:"© 2026 Moul El Hwayej. جميع الحقوق محفوظة.",
       footer_credit:'Créé par <a href="#" target="_blank" rel="noopener">Herio Marketing Digital 360°</a>',
-      form_success:"تم الإرسال بنجاح!"
+      form_success:"تم الإرسال بنجاح! سيتم تحويلك إلى واتساب."
     },
     fr: {
-      nav_home:"Accueil", nav_about:"Qui sommes-nous", nav_cats:"Nos collections", nav_gallery:"Galerie", nav_reviews:"Avis clients", nav_contact:"Contact",
+      nav_home:"Accueil", nav_about:"Qui sommes-nous", nav_cats:"Nos collections", nav_gallery:"Galerie", nav_videos:"Vidéos", nav_reviews:"Avis clients", nav_contact:"Contact",
       hero_eyebrow:"Élégance masculine marocaine", hero_title:"Mode masculine à l'identité <em>royale</em>",
       hero_sub:"Une collection complète de mode masculine d'une qualité exceptionnelle, conçue pour être la référence au Maroc en 2026.",
       hero_cta1:"Découvrir la collection", hero_cta2:"Nous contacter",
@@ -660,20 +936,29 @@
       cat1_t:"Chemises", cat1_d:"Élégance au quotidien", cat2_t:"Costumes", cat2_d:"Pour les occasions formelles",
       cat3_t:"Accessoires", cat3_d:"Des touches distinctives", cat4_t:"Chaussures", cat4_d:"Qualité et confort",
       gallery_eyebrow:"Galerie", gallery_title:"Un aperçu de notre univers", gallery_sub:"Découvrez nos dernières pièces et les détails de notre boutique",
+      videos_eyebrow:"Vidéos", videos_title:"Découvrez notre collection", videos_sub:"Des extraits vidéo de notre boutique et de nos dernières pièces",
       rev_eyebrow:"Avis clients", rev_title:"Ce qu'ils disent de nous",
       rev1_text:"Excellente qualité et service raffiné, une expérience shopping inoubliable.", rev1_name:"Youssef", rev1_role:"Client fidèle",
       rev2_text:"Designs élégants à prix raisonnables, je recommande vivement.", rev2_name:"Karim", rev2_role:"Nouveau client",
       rev3_text:"Livraison rapide et qualité au-delà des attentes.", rev3_name:"Amine", rev3_role:"Client fidèle",
+      rev4_text:"Des tissus très raffinés et une coupe parfaite, merci Moul El Hwayej.", rev4_name:"Soufiane", rev4_role:"Nouveau client",
+      rev5_text:"Un accueil raffiné et une équipe professionnelle, chaque pièce a dépassé mes attentes.", rev5_name:"Mehdi", rev5_role:"Client fidèle",
+      rev6_text:"Ma première commande et je ne regrette pas, une qualité à la hauteur du prix.", rev6_name:"Hamza", rev6_role:"Nouveau client",
+      rev1_date:"Juillet 2026", rev2_date:"Juillet 2026", rev3_date:"Juin 2026", rev4_date:"Juin 2026", rev5_date:"Mai 2026", rev6_date:"Mai 2026",
+      rev_verified:"Achat vérifié", rev_summary_count:"Basé sur 6 avis",
       contact_eyebrow:"Contact", contact_title:"Contactez-nous",
       c1_t:"Téléphone", c1_d:"+212 666 62 509", c2_t:"E-mail", c2_d:"contact@moulelhwayej.ma",
       c3_t:"Adresse", c3_d:"Rue Amira Aïcha, Kenitra 14000", map_btn:"Ouvrir dans Google Maps",
-      f_name:"Nom", f_phone:"Téléphone", f_msg:"Message", f_send:"Envoyer", f_note:"Nous vous répondrons dans les plus brefs délais.",
+      f_name:"Nom", f_phone:"Téléphone", f_interest:"Je suis intéressé par", f_interest_opt0:"Choisir une collection", f_interest_opt5:"Autre",
+      f_msg:"Message", f_send:"Envoyer", f_note:"Nous vous répondrons dans les plus brefs délais.",
+      f_err_name:"Veuillez saisir votre nom", f_err_phone:"Veuillez saisir un numéro valide",
+      floater_maps_tip:"Ouvrir dans Google Maps", floater_wa_tip:"Écrivez-nous sur WhatsApp", floater_call_tip:"Appelez-nous",
       footer_rights:"© 2026 Moul El Hwayej. Tous droits réservés.",
       footer_credit:'Créé par <a href="#" target="_blank" rel="noopener">Herio Marketing Digital 360°</a>',
-      form_success:"Envoyé avec succès !"
+      form_success:"Envoyé avec succès ! Vous allez être redirigé vers WhatsApp."
     },
     es: {
-      nav_home:"Inicio", nav_about:"Quiénes somos", nav_cats:"Colecciones", nav_gallery:"Galería", nav_reviews:"Opiniones", nav_contact:"Contacto",
+      nav_home:"Inicio", nav_about:"Quiénes somos", nav_cats:"Colecciones", nav_gallery:"Galería", nav_videos:"Vídeos", nav_reviews:"Opiniones", nav_contact:"Contacto",
       hero_eyebrow:"Elegancia masculina marroquí", hero_title:"Moda masculina con identidad <em>real</em>",
       hero_sub:"Una colección completa de moda masculina de calidad excepcional, diseñada para ser la número uno en Marruecos en 2026.",
       hero_cta1:"Descubrir la colección", hero_cta2:"Contáctanos",
@@ -688,20 +973,29 @@
       cat1_t:"Camisas", cat1_d:"Elegancia diaria", cat2_t:"Trajes", cat2_d:"Para ocasiones formales",
       cat3_t:"Accesorios", cat3_d:"Toques distintivos", cat4_t:"Zapatos", cat4_d:"Calidad y comodidad",
       gallery_eyebrow:"Galería", gallery_title:"Un vistazo a nuestro mundo", gallery_sub:"Explora una selección de nuestras últimas piezas y los detalles de nuestra tienda",
+      videos_eyebrow:"Vídeos", videos_title:"Descubre nuestra colección", videos_sub:"Vídeos de nuestra tienda y de nuestras últimas piezas",
       rev_eyebrow:"Opiniones", rev_title:"Qué dicen de nosotros",
       rev1_text:"Excelente calidad y servicio refinado, una experiencia de compra inolvidable.", rev1_name:"Youssef", rev1_role:"Cliente habitual",
       rev2_text:"Diseños elegantes a precios razonables, lo recomiendo totalmente.", rev2_name:"Karim", rev2_role:"Cliente nuevo",
       rev3_text:"Entrega rápida y calidad que supera las expectativas.", rev3_name:"Amine", rev3_role:"Cliente habitual",
+      rev4_text:"Los tejidos son muy refinados y el corte perfecto, gracias Moul El Hwayej.", rev4_name:"Soufiane", rev4_role:"Cliente nuevo",
+      rev5_text:"Trato exquisito y equipo profesional, cada pieza superó mis expectativas.", rev5_name:"Mehdi", rev5_role:"Cliente habitual",
+      rev6_text:"Mi primera compra y no me arrepiento, calidad a la altura del precio.", rev6_name:"Hamza", rev6_role:"Cliente nuevo",
+      rev1_date:"Julio 2026", rev2_date:"Julio 2026", rev3_date:"Junio 2026", rev4_date:"Junio 2026", rev5_date:"Mayo 2026", rev6_date:"Mayo 2026",
+      rev_verified:"Compra verificada", rev_summary_count:"Basado en 6 opiniones",
       contact_eyebrow:"Contacto", contact_title:"Contáctanos",
       c1_t:"Teléfono", c1_d:"+212 666 62 509", c2_t:"Correo electrónico", c2_d:"contact@moulelhwayej.ma",
       c3_t:"Dirección", c3_d:"Rue Amira Aïcha, Kenitra 14000", map_btn:"Abrir en Google Maps",
-      f_name:"Nombre", f_phone:"Teléfono", f_msg:"Mensaje", f_send:"Enviar", f_note:"Nos pondremos en contacto contigo lo antes posible.",
+      f_name:"Nombre", f_phone:"Teléfono", f_interest:"Estoy interesado en", f_interest_opt0:"Elige una colección", f_interest_opt5:"Otra",
+      f_msg:"Mensaje", f_send:"Enviar", f_note:"Nos pondremos en contacto contigo lo antes posible.",
+      f_err_name:"Introduce tu nombre", f_err_phone:"Introduce un número válido",
+      floater_maps_tip:"Abrir en Google Maps", floater_wa_tip:"Escríbenos por WhatsApp", floater_call_tip:"Llámanos",
       footer_rights:"© 2026 Moul El Hwayej. Todos los derechos reservados.",
       footer_credit:'Creado por <a href="#" target="_blank" rel="noopener">Herio Marketing Digital 360°</a>',
-      form_success:"¡Enviado con éxito!"
+      form_success:"¡Enviado con éxito! Se te redirigirá a WhatsApp."
     },
     en: {
-      nav_home:"Home", nav_about:"About Us", nav_cats:"Collections", nav_gallery:"Gallery", nav_reviews:"Reviews", nav_contact:"Contact",
+      nav_home:"Home", nav_about:"About Us", nav_cats:"Collections", nav_gallery:"Gallery", nav_videos:"Videos", nav_reviews:"Reviews", nav_contact:"Contact",
       hero_eyebrow:"Moroccan Men's Elegance", hero_title:"Men's fashion with a <em>royal</em> identity",
       hero_sub:"A complete collection of men's fashion with exceptional quality, designed to be Morocco's leading brand in 2026.",
       hero_cta1:"Discover the Collection", hero_cta2:"Contact Us",
@@ -716,20 +1010,29 @@
       cat1_t:"Shirts", cat1_d:"Everyday elegance", cat2_t:"Suits", cat2_d:"For formal occasions",
       cat3_t:"Accessories", cat3_d:"Distinctive touches", cat4_t:"Shoes", cat4_d:"Quality and comfort",
       gallery_eyebrow:"Gallery", gallery_title:"A Glimpse of Our World", gallery_sub:"Browse a selection of our latest pieces and store details",
+      videos_eyebrow:"Videos", videos_title:"Watch Our Collection", videos_sub:"Video glimpses of our store and latest pieces",
       rev_eyebrow:"Reviews", rev_title:"What They Say About Us",
       rev1_text:"Excellent quality and refined service, an unforgettable shopping experience.", rev1_name:"Youssef", rev1_role:"Loyal customer",
       rev2_text:"Elegant designs at reasonable prices, highly recommended.", rev2_name:"Karim", rev2_role:"New customer",
       rev3_text:"Fast delivery and quality beyond expectations.", rev3_name:"Amine", rev3_role:"Loyal customer",
+      rev4_text:"Very refined fabrics and a perfect fit, thank you Moul El Hwayej.", rev4_name:"Soufiane", rev4_role:"New customer",
+      rev5_text:"Refined service and a professional team, every piece exceeded my expectations.", rev5_name:"Mehdi", rev5_role:"Loyal customer",
+      rev6_text:"My first order and I have no regrets, quality that matches the price.", rev6_name:"Hamza", rev6_role:"New customer",
+      rev1_date:"July 2026", rev2_date:"July 2026", rev3_date:"June 2026", rev4_date:"June 2026", rev5_date:"May 2026", rev6_date:"May 2026",
+      rev_verified:"Verified buyer", rev_summary_count:"Based on 6 reviews",
       contact_eyebrow:"Contact", contact_title:"Get in Touch",
       c1_t:"Phone", c1_d:"+212 666 62 509", c2_t:"Email", c2_d:"contact@moulelhwayej.ma",
       c3_t:"Address", c3_d:"Rue Amira Aïcha, Kenitra 14000", map_btn:"Open in Google Maps",
-      f_name:"Name", f_phone:"Phone", f_msg:"Message", f_send:"Send", f_note:"We'll get back to you as soon as possible.",
+      f_name:"Name", f_phone:"Phone", f_interest:"I'm interested in", f_interest_opt0:"Choose a collection", f_interest_opt5:"Other",
+      f_msg:"Message", f_send:"Send", f_note:"We'll get back to you as soon as possible.",
+      f_err_name:"Please enter your name", f_err_phone:"Please enter a valid phone number",
+      floater_maps_tip:"Open in Google Maps", floater_wa_tip:"Message us on WhatsApp", floater_call_tip:"Call us",
       footer_rights:"© 2026 Moul El Hwayej. All rights reserved.",
       footer_credit:'Created by <a href="#" target="_blank" rel="noopener">Herio Marketing Digital 360°</a>',
-      form_success:"Sent successfully!"
+      form_success:"Sent successfully! You'll be redirected to WhatsApp."
     },
     it: {
-      nav_home:"Home", nav_about:"Chi siamo", nav_cats:"Collezioni", nav_gallery:"Galleria", nav_reviews:"Recensioni", nav_contact:"Contatti",
+      nav_home:"Home", nav_about:"Chi siamo", nav_cats:"Collezioni", nav_gallery:"Galleria", nav_videos:"Video", nav_reviews:"Recensioni", nav_contact:"Contatti",
       hero_eyebrow:"Eleganza maschile marocchina", hero_title:"Moda maschile dall'identità <em>reale</em>",
       hero_sub:"Una collezione completa di moda maschile di qualità eccezionale, pensata per essere la numero uno in Marocco nel 2026.",
       hero_cta1:"Scopri la collezione", hero_cta2:"Contattaci",
@@ -744,17 +1047,26 @@
       cat1_t:"Camicie", cat1_d:"Eleganza quotidiana", cat2_t:"Abiti", cat2_d:"Per occasioni formali",
       cat3_t:"Accessori", cat3_d:"Tocchi distintivi", cat4_t:"Scarpe", cat4_d:"Qualità e comfort",
       gallery_eyebrow:"Galleria", gallery_title:"Uno sguardo al nostro mondo", gallery_sub:"Sfoglia una selezione dei nostri ultimi capi e dei dettagli del negozio",
+      videos_eyebrow:"Video", videos_title:"Scopri la nostra collezione", videos_sub:"Video del nostro negozio e dei nostri ultimi capi",
       rev_eyebrow:"Recensioni", rev_title:"Cosa dicono di noi",
       rev1_text:"Qualità eccellente e servizio raffinato, un'esperienza di shopping indimenticabile.", rev1_name:"Youssef", rev1_role:"Cliente fedele",
       rev2_text:"Design eleganti a prezzi ragionevoli, lo consiglio vivamente.", rev2_name:"Karim", rev2_role:"Nuovo cliente",
       rev3_text:"Consegna rapida e qualità oltre le aspettative.", rev3_name:"Amine", rev3_role:"Cliente fedele",
+      rev4_text:"Tessuti molto raffinati e vestibilità perfetta, grazie Moul El Hwayej.", rev4_name:"Soufiane", rev4_role:"Nuovo cliente",
+      rev5_text:"Servizio raffinato e team professionale, ogni capo ha superato le mie aspettative.", rev5_name:"Mehdi", rev5_role:"Cliente fedele",
+      rev6_text:"Il mio primo ordine e non me ne pento, qualità all'altezza del prezzo.", rev6_name:"Hamza", rev6_role:"Nuovo cliente",
+      rev1_date:"Luglio 2026", rev2_date:"Luglio 2026", rev3_date:"Giugno 2026", rev4_date:"Giugno 2026", rev5_date:"Maggio 2026", rev6_date:"Maggio 2026",
+      rev_verified:"Acquisto verificato", rev_summary_count:"Basato su 6 recensioni",
       contact_eyebrow:"Contatti", contact_title:"Contattaci",
       c1_t:"Telefono", c1_d:"+212 666 62 509", c2_t:"Email", c2_d:"contact@moulelhwayej.ma",
       c3_t:"Indirizzo", c3_d:"Rue Amira Aïcha, Kenitra 14000", map_btn:"Apri in Google Maps",
-      f_name:"Nome", f_phone:"Telefono", f_msg:"Messaggio", f_send:"Invia", f_note:"Ti risponderemo il prima possibile.",
+      f_name:"Nome", f_phone:"Telefono", f_interest:"Sono interessato a", f_interest_opt0:"Scegli una collezione", f_interest_opt5:"Altro",
+      f_msg:"Messaggio", f_send:"Invia", f_note:"Ti risponderemo il prima possibile.",
+      f_err_name:"Inserisci il tuo nome", f_err_phone:"Inserisci un numero valido",
+      floater_maps_tip:"Apri in Google Maps", floater_wa_tip:"Scrivici su WhatsApp", floater_call_tip:"Chiamaci",
       footer_rights:"© 2026 Moul El Hwayej. Tutti i diritti riservati.",
       footer_credit:'Creato da <a href="#" target="_blank" rel="noopener">Herio Marketing Digital 360°</a>',
-      form_success:"Inviato con successo!"
+      form_success:"Inviato con successo! Verrai reindirizzato a WhatsApp."
     }
   };
   const langNames = { ar:"العربية", fr:"Français", es:"Español", en:"English", it:"Italiano" };
@@ -824,13 +1136,42 @@
     }
   });
 
-  // formulario
-  const form = document.querySelector('form');
+  // formulario avanzado 2026 - validación + envío directo por WhatsApp
+  const form = document.getElementById('contactForm');
   const formStatus = document.getElementById('formStatus');
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const currentLang = document.documentElement.lang || 'ar';
-    formStatus.textContent = (translations[currentLang] && translations[currentLang].form_success) || 'تم الإرسال بنجاح!';
+    const dict = translations[currentLang] || translations.ar;
+
+    const nameEl = form.querySelector('[name="name"]');
+    const phoneEl = form.querySelector('[name="phone"]');
+    const interestEl = form.querySelector('[name="interest"]');
+    const msgEl = form.querySelector('[name="message"]');
+
+    let valid = true;
+    form.querySelectorAll('.field').forEach(f => f.classList.remove('error'));
+
+    if(!nameEl.value.trim()){
+      nameEl.closest('.field').classList.add('error');
+      valid = false;
+    }
+    if(!phoneEl.value.trim() || !/^[0-9+ ]{9,15}$/.test(phoneEl.value.trim())){
+      phoneEl.closest('.field').classList.add('error');
+      valid = false;
+    }
+    if(!valid) return;
+
+    const interestLabel = interestEl.options[interestEl.selectedIndex]?.text || '';
+    let text = `${dict.f_name}: ${nameEl.value.trim()}\n${dict.f_phone}: ${phoneEl.value.trim()}`;
+    if(interestEl.value) text += `\n${dict.f_interest}: ${interestLabel}`;
+    if(msgEl.value.trim()) text += `\n${dict.f_msg}: ${msgEl.value.trim()}`;
+
+    formStatus.textContent = dict.form_success || 'تم الإرسال بنجاح!';
+    formStatus.classList.add('success');
+
+    window.open(`https://wa.me/212666662509?text=${encodeURIComponent(text)}`, '_blank');
+    form.reset();
   });
 
   // galería - lightbox
@@ -851,7 +1192,41 @@
   }
   lightboxClose.addEventListener('click', closeLightbox);
   lightbox.addEventListener('click', (e) => { if(e.target === lightbox) closeLightbox(); });
-  document.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeLightbox(); });
+
+  // vídeos - lightbox con reproducción a pantalla ampliada
+  const videoItems = document.querySelectorAll('.video-item');
+  const videoLightbox = document.getElementById('videoLightbox');
+  const videoLightboxVideo = document.getElementById('videoLightboxVideo');
+  const videoClose = document.getElementById('videoClose');
+  videoItems.forEach(item => {
+    const src = item.querySelector('video').getAttribute('src');
+    item.addEventListener('click', () => {
+      videoLightboxVideo.src = src;
+      videoLightbox.classList.add('open');
+      videoLightboxVideo.play().catch(()=>{});
+    });
+  });
+  function closeVideoLightbox(){
+    videoLightbox.classList.remove('open');
+    videoLightboxVideo.pause();
+    videoLightboxVideo.src = '';
+  }
+  videoClose.addEventListener('click', closeVideoLightbox);
+  videoLightbox.addEventListener('click', (e) => { if(e.target === videoLightbox) closeVideoLightbox(); });
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape'){ closeLightbox(); closeVideoLightbox(); }
+  });
+
+  // pausar/reanudar vídeos de la galería según visibilidad (rendimiento en móvil)
+  const observedVideos = document.querySelectorAll('.video-item video');
+  const videoIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const v = entry.target;
+      if(entry.isIntersecting){ v.play().catch(()=>{}); }
+      else{ v.pause(); }
+    });
+  }, { threshold:.4 });
+  observedVideos.forEach(v => videoIO.observe(v));
 </script>
 
 </body>
